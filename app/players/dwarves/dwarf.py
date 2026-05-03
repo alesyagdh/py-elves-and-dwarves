@@ -3,8 +3,8 @@ from app.players.player import Player
 
 
 class Dwarf(Player, ABC):
-    def __init__(self, nickname: str, _favourite_dish: str) -> None:
-        self._favourite_dish = _favourite_dish
+    def __init__(self, nickname: str, favourite_dish: str) -> None:
+        self._favourite_dish = favourite_dish
         super().__init__(nickname)
 
     def eat_favourite_dish(self) -> None:

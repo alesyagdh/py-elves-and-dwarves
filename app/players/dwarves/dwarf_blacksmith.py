@@ -3,9 +3,9 @@ from app.players.dwarves.dwarf import Dwarf
 
 class DwarfBlacksmith(Dwarf):
     def __init__(self, nickname: str,
-                 _favorite_dish: str, _skill_level: int) -> None:
-        self._skill_level = _skill_level
-        super().__init__(nickname, _favorite_dish)
+                 favorite_dish: str, skill_level: int) -> None:
+        self._skill_level = skill_level
+        super().__init__(nickname, favorite_dish)
 
     def player_info(self) -> str:
         name = self.nickname
